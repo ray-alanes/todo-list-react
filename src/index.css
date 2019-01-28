@@ -1,0 +1,119 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #BaFDCa;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #12C121;
+  position: fixed;
+  width: 100%;
+}
+  
+nav {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+}
+ 
+nav ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+}
+ 
+nav ul li {
+  float: left;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+ 
+nav ul li a {
+  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+  padding: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+form {
+  padding-top: 100px;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.section {
+  padding: 50px;
+}
+
+.todoListMain .header input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #FFF;
+  width: 165px;
+}
+
+.todoListMain .header button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  margin-right: 0px;
+  background-color: #12C121;
+  color: #FFF;
+  border: 2px solid #12C121;
+  border-radius: 10px;
+}
+
+.todoListMain .header button:hover {
+  background-color: #10a121;
+  border: 2px solid #10a121;
+  cursor: pointer;
+}
+
+.todoListMain .theList {
+  list-style: none;
+  color: red;
+  padding-left: 0;
+  width: 250px;
+}
+
+.todoListMain .theList li {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+ul.theList {
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+
+.theList li {
+  color: #333;
+  background-color: rgba(255, 255, 255, .5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+}
+
+li {
+  margin-left: 50px;
+}
+
+li:hover {
+  background-color: #FF4D4D22;
+  cursor: pointer;
+}
+
+li:active {
+  background-color: #FF4D4D;
+}
